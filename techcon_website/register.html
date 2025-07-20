@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for TechCon 2024 - Conference Registration</title>
+    <meta name="description" content="Register for TechCon 2024 conference. Secure your spot at the premier technology conference featuring AI, cloud computing, and innovation workshops.">
+</head>
+<body>
+    <header>
+        <h1>Register for TechCon 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Conference Registration</h2>
+        <p>Join us for three days of cutting-edge technology presentations, workshops, and networking opportunities. Early bird pricing ends August 31, 2024.</p>
+        
+        <h3>Registration Information</h3>
+        <ul>
+            <li><strong>Early Bird (until Aug 31):</strong> $499</li>
+            <li><strong>Regular Registration:</strong> $699</li>
+            <li><strong>Student Discount:</strong> $299 (with valid ID)</li>
+            <li><strong>Group Rates:</strong> 15% off for 5+ registrations</li>
+        </ul>
+
+        <form action="process-registration.php" method="post">
+            <h3>Personal Information</h3>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="company">Company/Organization:</label>
+            <input type="text" id="company" name="company">
+            
+            <label for="jobtitle">Job Title:</label>
+            <input type="text" id="jobtitle" name="jobtitle">
+            
+            <h3>Account Security</h3>
+            
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+            <p><small>Password must be at least 8 characters long and contain letters and numbers.</small></p>
+            
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required minlength="8">
+            <p><small>Please re-enter your password to confirm it matches.</small></p>
+            
+            <h3>Registration Details</h3>
+            
+            <label for="tickettype">Ticket Type:</label>
+            <select id="tickettype" name="tickettype" required>
+                <option value="">Select ticket type</option>
+                <option value="earlybird">Early Bird - $499</option>
+                <option value="regular">Regular - $699</option>
+                <option value="student">Student - $299</option>
+            </select>
+            
+            <fieldset>
+                <legend>Session Interests (select all that apply)</legend>
+                <input type="checkbox" id="ai" name="interests" value="ai">
+                <label for="ai">Artificial Intelligence & Machine Learning</label>
+                
+                <input type="checkbox" id="cloud" name="interests" value="cloud">
+                <label for="cloud">Cloud Computing & DevOps</label>
+                
+                <input type="checkbox" id="security" name="interests" value="security">
+                <label for="security">Cybersecurity</label>
+                
+                <input type="checkbox" id="mobile" name="interests" value="mobile">
+                <label for="mobile">Mobile Development</label>
+                
+                <input type="checkbox" id="quantum" name="interests" value="quantum">
+                <label for="quantum">Quantum Computing</label>
+            </fieldset>
+            
+            <h3>Accessibility & Special Requirements</h3>
+            
+            <label for="dietary">Dietary Restrictions:</label>
+            <select id="dietary" name="dietary">
+                <option value="none">No restrictions</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="glutenfree">Gluten-free</option>
+                <option value="other">Other (please specify in comments)</option>
+            </select>
+            
+            <label for="accessibility">Accessibility Needs:</label>
+            <textarea id="accessibility" name="accessibility" rows="3" placeholder="Please describe any accessibility accommodations you need (wheelchair access, sign language interpreter, etc.)"></textarea>
+            
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional information, questions, or special requests"></textarea>
+            
+            <h3>Terms and Conditions</h3>
+            
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a> of TechCon 2024.</label>
+            
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to TechCon newsletter for updates on future events and technology insights.</label>
+            
+            <input type="checkbox" id="marketing" name="marketing">
+            <label for="marketing">I consent to receive promotional emails from TechCon sponsors and partners.</label>
+            
+            <h3>Complete Registration</h3>
+            
+            <p><strong>Review your information:</strong> Please ensure all details are correct before submitting. You will receive a confirmation email with your registration details and payment instructions.</p>
+            
+            <button type="submit">Register Now</button>
+            
+            <p><small>By clicking "Register Now", you acknowledge that you have read and agree to our terms and conditions. Registration is not complete until payment is processed.</small></p>
+        </form>
+        
+        <h3>Need Help?</h3>
+        <p>If you have questions about registration or need assistance, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> registration@techcon2024.com</li>
+            <li><strong>Phone:</strong> +1 (555) 123-TECH</li>
+            <li><strong>Hours:</strong> Monday-Friday, 9AM-6PM PST</li>
+        </ul>
+        
+        <h3>Group Registration</h3>
+        <p>For group registrations of 5 or more attendees, please contact our group sales team at <a href="mailto:groups@techcon2024.com">groups@techcon2024.com</a> for special pricing and coordinated registration assistance.</p>
+    </main>
+
+    <footer>
+        <p>copyright &copy; 2024 TechCon. All rights reserved. TechCon is a registered trademark of TechCon Events LLC.</p>
+    </footer>
+</body>
+</html>
